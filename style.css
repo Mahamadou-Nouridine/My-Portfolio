@@ -49,12 +49,13 @@
   margin: 24px;
   padding: 120px 24px 120px 24px;
 }
+
 .headline-social > li {
   list-style-type: none;
 }
 
-.link{
-color: white;
+.link {
+  color: white;
   font-size: 25px;
 }
 
