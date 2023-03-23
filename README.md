@@ -1,11 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="./images/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
+  <h3><b>My Portfolio</b></h3>
 </div>
 
 # 📗 Table of Contents
@@ -22,6 +18,7 @@
     - [Usage](#usage)
     - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -34,6 +31,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
+
 - HTML
 - CSS
 - Javascript
@@ -56,7 +54,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -64,6 +61,7 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
+
 - a browser
 - git
 - nodejs
@@ -106,7 +104,15 @@ To run tests, run the following command:
 - Linkedin: [mahamadou-nouridine-mamoudou-souley-2b424a1a5](https://www.linkedin.com/in/mahamadou-nouridine-mamoudou-souley-2b424a1a5)
 - Twitter: [Nouridine_Dino](https://twitter.com/Nouridine_Dino)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Services**
+- [ ] **Testimonials**
+- [ ] **Contact**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -123,7 +129,6 @@ If you like this project give me a follow and/or a star
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
 
 I would like to thank all my coding partners at Microverse
 
