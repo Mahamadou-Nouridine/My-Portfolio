@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#headline {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  background: url("./images/Group.png") #1c1a19 no-repeat;
+  background-position: 100% 120%;
+  background-size: 30%;
+}
+
+#headline-title2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 12px 0;
+}
+
+#headline-title {
+  font-family: Crete Round, sans-serif;
+  color: #ff6b00;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+#headline-description {
+  font-family: "Poppins", serif, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff5e1;
+}
+
+#headline > div {
+  margin: 24px;
+  padding: 120px 24px 120px 24px;
+}
+
+#headline-social > i {
+  color: white;
+  font-size: 25px;
+}
+
+#headline-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  width: 200px;
+  height: 40px;
+  margin-top: 12px;
+}
+
+#logo {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", serif, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+}
+
+header > nav {
+  height: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3c3a39;
+  align-items: center;
+  color: white;
+  padding: 24px;
+}
+
+#links {
+  display: none;
+}
