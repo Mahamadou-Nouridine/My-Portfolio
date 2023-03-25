@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
+
+hr {
+  color: #212121;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #fff5e1;
+  border: solid 1px #f55800;
+  color: #f55800;
+}
+
+button:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+}
+
+button:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
+}
+
+.profile {
+  background: url("./images/illustration-about-me-mobile.png") #1c1a19 no-repeat;
+  background-position: 100% 25%;
+}
+
+.skills {
+  padding: 102px 0 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill {
+  width: auto;
+  padding: 25px 0;
+  color: white;
+}
+
+.skill-title {
+  display: flex;
+  padding: 0 12px;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding-top: 33px;
+  justify-content: space-between;
+}
+
+.skill-item {
+  font-family: Inter, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.skill-title > i {
+  padding-right: 12px;
+  color: #ff6b00;
+}
+
+.about-title {
+  font-family: Crete Round, sans-serif;
+  color: #ff6b00;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 88px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+}
+
+.about-me {
+  padding: 120px 0;
+  margin-bottom: 89px;
+}
+
+.about-description {
+  margin: 24px 0;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: white;
+}
+
+.projects-card {
+  padding: 0 0 120px 0;
+  display: grid;
+}
+
+.card-details {
+  max-width: 369px;
+  margin: 0 16px 8px 16px;
+  padding: 8px 0;
+}
+
+.project1-image {
+  width: 100%;
+  max-width: 684px;
+  margin-bottom: 24px;
+}
+
+.projects,
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
+.project1-tags,
+.card-tags {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 12px;
+}
+
+.project1-tags {
+  width: 100%;
+  max-width: 314px;
+}
+
+.card-tags {
+  max-width: 247px;
+  width: 100%;
+}
+
+.card {
+  margin-top: 24px;
+  padding: 71px 0 0 0;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/card-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project1-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project1-tag,
+.card-tag {
+  padding: 10px 12px 10px 12px;
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.project1-tag {
+  border: 1px solid #8993a4;
+}
+
+.card-tag {
+  background-color: rgba(255, 255, 255, 0.24);
+  color: white;
+}
+
+.card-title {
+  font-family: Crete Round, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: white;
+}
+
+.project1-card-description,
+.card-description {
+  padding: 12px 0;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.card-description {
+  color: white;
+}
+
+.projects-heading {
+  width: 100%;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  height: 107px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-button {
+  height: 48px;
+  width: 100%;
+}
+
+.project1-button {
+  height: 48px;
+}
+
+.project1-button,
+.card-button,
+.about-button {
+  padding: 12px;
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: white;
+  background: #ff6b00;
+  border: none;
+}
+
+.project1-card-title {
+  font-family: Crete Round, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.projects-title {
+  font-family: Crete Round, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: left;
+}
