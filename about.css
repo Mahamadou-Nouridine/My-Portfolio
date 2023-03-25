@@ -104,6 +104,7 @@ button:disabled {
 
 .projects-card {
   padding: 0 0 120px 0;
+  display: grid;
 }
 
 .card-details {
