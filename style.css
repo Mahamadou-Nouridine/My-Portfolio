@@ -102,15 +102,16 @@ header > nav {
 footer {
   display: flex;
   justify-content: center;
-  padding-top: 16px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer-social>li {
+.footer-social > li {
   list-style-type: none;
 }
 
 .social-item {
-  color: #505F79;
+  color: #505f79;
   font-size: 25px;
 }
 
@@ -119,10 +120,14 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
+  margin: 12px 0 16px 0;
   width: 200px;
   height: 40px;
   margin-top: 12px;
+}
+
+.footer-divider {
+  border: solid 1px #dfe1e6;
 }
 
 .form {
@@ -139,7 +144,7 @@ footer {
 
 .form-text {
   margin-bottom: 73px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
@@ -150,17 +155,17 @@ footer {
 .email-input ::placeholder,
 .name-input ::placeholder,
 .form-texterea ::placeholder {
-  font-family: 'Inter','sans-serif';
+  font-family: Inter, sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
 .form-texterea ::placeholder {
   font-style: italic;
-  color: black;
+  padding: 12px 0 0 12px;
 }
 
 .email-input input,
@@ -173,12 +178,12 @@ footer {
 .form-texterea textarea {
   width: 100%;
   border: none;
-  border-bottom: solid #DBD8D7 1px;
+  border-bottom: solid #dbd8d7 1px;
   margin-top: 24px;
 }
 
 .form-texterea textarea {
   border: none;
   background-color: #fbf8f7;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }

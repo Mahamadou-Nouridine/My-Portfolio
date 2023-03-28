@@ -5,6 +5,19 @@ hr {
   width: 100%;
 }
 
+button {
+  padding: 12px;
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: white;
+  background: #ff6b00;
+  border: none;
+}
+
 button:hover {
   background-color: #fff5e1;
   border: solid 1px #f55800;
@@ -225,21 +238,6 @@ button:disabled {
 
 .project1-button {
   height: 48px;
-}
-
-.project1-button,
-.card-button,
-.about-button {
-  padding: 12px;
-  font-family: Inter, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: white;
-  background: #ff6b00;
-  border: none;
 }
 
 .project1-card-title {
