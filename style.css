@@ -98,3 +98,29 @@ header > nav {
 .links {
   display: none;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px
+}
+
+.footer-social>li {
+  list-style-type: none;
+}
+
+.social-item {
+  color: #505F79;
+  font-size: 25px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  width: 200px;
+  height: 40px;
+  margin-top: 12px;
+}
