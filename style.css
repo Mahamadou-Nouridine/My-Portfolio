@@ -165,17 +165,18 @@ footer {
 
 .form-texterea ::placeholder {
   font-style: italic;
-  padding: 12px 0 0 12px;
 }
 
 .email-input input,
 .name-input input {
   height: 32px;
+  padding-left: 12px;
 }
 
 .email-input input,
 .name-input input,
 .form-texterea textarea {
+  font-family: Inter, sans-serif;
   width: 100%;
   border: none;
   border-bottom: solid #dbd8d7 1px;
@@ -186,4 +187,5 @@ footer {
   border: none;
   background-color: #fbf8f7;
   margin-bottom: 24px;
+  padding: 12px 0 0 12px;
 }
