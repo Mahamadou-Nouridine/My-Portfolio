@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section,
+footer {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -142,6 +153,8 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 120px 25px 120px 25px;
+  width: 100%;
+  max-width: 1155px;
 }
 
 .form-text {
@@ -200,18 +213,14 @@ footer {
     justify-content: space-between;
   }
 
-  header nav {
-    /* padding: 0; */
-    /* background-color: rgb(255, 255, 255); */
-  }
   .links li > a {
     text-decoration: none;
     color: white;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
   }
 
@@ -223,11 +232,12 @@ footer {
     width: 100%;
     max-width: 1155px;
     flex-direction: row-reverse;
-    /* margin-left: -85px; */
   }
+
   .headline-title {
     max-width: 566px;
   }
+
   .headline-description {
     max-width: 566px;
   }
@@ -236,9 +246,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     height: 147px;
-    /* background-color: aqua; */
     width: auto;
-
     margin-right: 3%;
     align-self: center;
   }
@@ -248,5 +256,22 @@ footer {
     background: url("./images/Illustration-header2.png") #1c1a19 no-repeat;
     background-position: 100% 50%;
     background-size: 30%;
+  }
+
+  .contact-form {
+    flex-direction: row;
+  }
+
+  .form-text {
+    text-align: start;
+    max-width: 455px;
+  }
+
+  .form {
+    text-align: start;
+  }
+
+  .footer-divider {
+    width: 100%;
   }
 }

@@ -3,6 +3,8 @@
 hr {
   color: #212121;
   width: 100%;
+  height: 1px;
+  border: solid 1px #212121;
 }
 
 button {
@@ -126,10 +128,13 @@ button:disabled {
   padding: 8px 0;
 }
 
-.project1-image {
+.image-project1 {
   width: 100%;
   max-width: 684px;
-  margin-bottom: 24px;
+}
+
+.project1-image {
+  width: 100%;
 }
 
 .projects > div,
@@ -140,6 +145,11 @@ button:disabled {
   align-items: center;
   flex-direction: column;
   padding: 0 24px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
 }
 
 .project1-tags,
@@ -256,8 +266,54 @@ button:disabled {
   line-height: 52px;
   letter-spacing: 0;
   text-align: left;
+  width: 315px;
 }
 
-@media only screen and (min-width: 768px){
-  
+@media only screen and (min-width: 768px) {
+  .projects-heading {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .projects-heading > div {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+
+  .project1-image {
+    padding-right: 24px;
+  }
+
+  .project1-card {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .projects-card {
+    grid-template-columns: 31.83% 31.83% 31.83%;
+    grid-gap: 24px;
+  }
+
+  .about-me {
+    max-width: 566px;
+    align-self: flex-start;
+  }
+
+  .profile {
+    background: url("./images/Frame.png") #1c1a19 no-repeat;
+    background-position: 100% 10%;
+    background-size: 35%;
+  }
+
+  .profile-divider {
+    border: solid 1px white;
+  }
+
+  .skills {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
