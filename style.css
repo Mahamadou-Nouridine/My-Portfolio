@@ -98,3 +98,94 @@ header > nav {
 .links {
   display: none;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social > li {
+  list-style-type: none;
+}
+
+.social-item {
+  color: #505f79;
+  font-size: 25px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0 16px 0;
+  width: 200px;
+  height: 40px;
+  margin-top: 12px;
+}
+
+.footer-divider {
+  border: solid 1px #dfe1e6;
+}
+
+.form {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 25px 120px 25px;
+}
+
+.form-text {
+  margin-bottom: 73px;
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.email-input ::placeholder,
+.name-input ::placeholder,
+.form-texterea ::placeholder {
+  font-family: Inter, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.form-texterea ::placeholder {
+  font-style: italic;
+}
+
+.email-input input,
+.name-input input {
+  height: 32px;
+  padding-left: 12px;
+}
+
+.email-input input,
+.name-input input,
+.form-texterea textarea {
+  font-family: Inter, sans-serif;
+  width: 100%;
+  border: none;
+  border-bottom: solid #dbd8d7 1px;
+  margin-top: 24px;
+}
+
+.form-texterea textarea {
+  border: none;
+  background-color: #fbf8f7;
+  margin-bottom: 24px;
+  padding: 12px 0 0 12px;
+}

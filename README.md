@@ -98,11 +98,23 @@ To run tests, run the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Mahamadou Nouridine**
 
 - GitHub: [mahamadou-nouridine](https://github.com/mahamadou-nouridine)
 - Linkedin: [mahamadou-nouridine-mamoudou-souley-2b424a1a5](https://www.linkedin.com/in/mahamadou-nouridine-mamoudou-souley-2b424a1a5)
 - Twitter: [Nouridine_Dino](https://twitter.com/Nouridine_Dino)
+
+👤 **Shihab Uddin Khan**
+
+- GitHub: [@shihabrafio](https://github.com/shihabrafio)
+- Twitter: [@shihab_uddin19](https://twitter.com/shihab_uddin19)
+- LinkedIn: [Shihab Uddin Khan](https://www.linkedin.com/in/shihab-uddin-khan-45620a16a/)
+
+👤 **Tumaini Maganiko**
+
+- GitHub: [@githubhandle](https://github.com/tumainimaganiko)
+- Twitter: [@twitterhandle](https://twitter.com/Chief2maini)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tumaini-maganiko-991b30262/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
