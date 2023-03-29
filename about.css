@@ -132,11 +132,11 @@ button:disabled {
   margin-bottom: 24px;
 }
 
-.projects,
-.profile {
+.projects > div,
+.profile > div {
+  max-width: 1155px;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 0 24px;
@@ -256,4 +256,8 @@ button:disabled {
   line-height: 52px;
   letter-spacing: 0;
   text-align: left;
+}
+
+@media only screen and (min-width: 768px){
+  
 }
