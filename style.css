@@ -64,6 +64,11 @@ footer {
 .social {
   color: white;
   font-size: 25px;
+  height: 20px;
+  width: 20px;
+  border-radius: 0px;
+  padding: 21px;
+  /* background-color: aqua; */
 }
 
 .headline-social {
@@ -245,7 +250,7 @@ footer {
   .headline-social {
     flex-direction: column;
     justify-content: space-between;
-    height: 147px;
+    height: 190px;
     width: auto;
     margin-right: 3%;
     align-self: center;
