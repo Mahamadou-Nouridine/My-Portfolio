@@ -323,10 +323,6 @@ section {
     justify-content: space-between;
   }
 
-  .card:hover {
-    background-image: url("./images/card-image.png");
-  }
-
   .card:hover .card-details {
     display: none;
   }

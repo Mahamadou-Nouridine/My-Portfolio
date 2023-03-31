@@ -91,6 +91,13 @@ footer {
   line-height: 24px;
   letter-spacing: 0;
   text-align: center;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.logo:hover {
+  transform: scale(1.2);
 }
 
 header {
@@ -277,5 +284,15 @@ footer {
 
   .footer-divider {
     width: 100%;
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.4);
   }
 }
