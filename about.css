@@ -323,6 +323,12 @@ section {
     justify-content: space-between;
   }
 
+  .card{
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+
   .card:hover .card-details {
     display: none;
   }
@@ -334,4 +340,5 @@ section {
   .card:hover .card-button {
     display: block;
   }
+
 }
