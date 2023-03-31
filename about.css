@@ -323,7 +323,7 @@ section {
     justify-content: space-between;
   }
 
-  .card{
+  .card {
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
@@ -341,4 +341,8 @@ section {
     display: block;
   }
 
+  .card:hover {
+    background-image: url("./images/card-image.png");
+    transform: scale(1.08);
+  }
 }
