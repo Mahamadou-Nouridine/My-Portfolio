@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 section,
@@ -214,6 +215,15 @@ footer {
   background-color: #fbf8f7;
   margin-bottom: 24px;
   padding: 12px 0 0 12px;
+}
+
+/* sidemenu */
+.side-menu {
+  background-color: aqua;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
 }
 
 @media only screen and (min-width: 768px) {
