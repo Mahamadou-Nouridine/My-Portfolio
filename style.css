@@ -253,11 +253,11 @@ footer {
 }
 
 .menu-links li {
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   text-decoration: none;
   border-bottom: #6f6c6b solid 1px;
