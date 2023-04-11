@@ -116,6 +116,12 @@ To run tests, run the following command:
 - Twitter: [@twitterhandle](https://twitter.com/Chief2maini)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/tumaini-maganiko-991b30262/)
 
+👤 **Shalini Nayan**
+
+- GitHub: [@ShaliniNayan](https://github.com/ShaliniNayan)
+- Twitter: [@sndprs](https://twitter.com/sndprs)
+- LinkedIn: [shalini-nayan-5820389](https://linkedin.com/in/shalini-nayan-5820389)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
