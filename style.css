@@ -227,6 +227,7 @@ footer {
   padding: 25px;
   transform: translateX(100%);
   transition: all ease-in-out 1s;
+  inset: 0;
 }
 
 .open-side-menu {
