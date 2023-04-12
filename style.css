@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
   position: relative;
 }
 
@@ -274,6 +276,91 @@ footer {
   cursor: pointer;
 }
 
+/*popup*/
+.popup {
+  background-color: #fff;
+  width: 95%;
+  max-width: 1156px;
+  height: auto;
+  z-index: 101;
+  padding: 25px;
+  position: relative;
+
+  transform: scale(0);
+  transition: all ease-in-out 1s;
+}
+
+.popup-open {
+  transform: scale(1);
+  transition: all ease-in-out 1s;
+}
+
+.popup-cross {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 30px;
+}
+
+.popup-container {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+
+.popup-image img {
+  width: 100%;
+}
+
+.popup-image {
+  margin: 24px 0;
+  max-width: 659px;
+}
+
+.popup-title h2 {
+  color: #172b4d;
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.popup-title {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-description p {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.popup-container {
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  backdrop-filter: blur(15px);
+}
+
+/* body {
+  overflow: hidden;
+} */
+
+/*popup*/
+
 @media only screen and (min-width: 768px) {
   .links {
     display: flex;
@@ -348,6 +435,23 @@ footer {
   .side-menu {
     display: none;
   }
+
+  /* popup  */
+  .popup-img-description {
+    display: flex;
+  }
+
+  .popup-image {
+    margin: 0 25px 0 0;
+  }
+
+  .popup-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  /* popup  */
 }
 
 @keyframes side-menu-opening {

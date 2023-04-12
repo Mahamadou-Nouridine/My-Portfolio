@@ -170,20 +170,6 @@ section {
   width: 100%;
 }
 
-.card {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/card-image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-height: 435px;
-  min-height: 386px;
-  position: relative;
-  cursor: pointer;
-}
-
 .project1-card {
   display: flex;
   flex-direction: column;
@@ -250,7 +236,6 @@ section {
 .card-button {
   height: 48px;
   width: 100%;
-  bottom: 0;
 }
 
 .project1-button {
@@ -323,27 +308,20 @@ section {
     flex-direction: row;
     justify-content: space-between;
   }
-
-  .card {
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
+  
+  .card-button {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 
   .card:hover .card-details {
     display: none;
   }
 
-  .card-button {
-    display: none;
-  }
 
   .card:hover .card-button {
     display: block;
-  }
-
-  .card:hover {
-    background-image: url("./images/card-image.png");
-    transform: scale(1.08);
   }
 }
