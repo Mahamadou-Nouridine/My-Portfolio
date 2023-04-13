@@ -1,4 +1,4 @@
-import { data, styles } from "./data.js";
+import { data } from "./data.js";
 const sideMenu = document.querySelector(".side-menu");
 const hamburger = document.querySelector("#hamburger");
 const closeMenu = document.querySelector("#side-menu-close");
@@ -14,13 +14,8 @@ const popupDescription = document.querySelector("#popup-description");
 const popupSeeLive = document.querySelector("#popup-see-live");
 const popupSeeSource = document.querySelector("#popup-see-source");
 const popupCross = document.querySelector("#popup-cross");
-const project1Image = document.querySelector(".project1-image");
-const project1Title = document.querySelector(".project1-card-title");
-const project1Description = document.querySelector(
-  ".project1-card-description"
-);
-const project1Tags = document.querySelector(".project1-tags");
 const project1Card = document.querySelector(".project1-card");
+
 let size = window.innerWidth;
 window.onresize = () => {
   size = window.innerWidth;

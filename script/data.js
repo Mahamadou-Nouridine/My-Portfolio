@@ -69,28 +69,3 @@ export const data = [
     source: 'https://www.github.com',
   },
 ];
-
-export const styles = {
-  desktop:{
-    card: {
-    //   'margin-top': '24px',
-    //   'display': 'flex',
-    //   'flex-direction': 'column',
-    //  ' justify-content': 'center',
-    //   'align-items': "center",
-    //   'background-repeat': 'no-repeat',
-    //   'background-size': 'cover',
-    //   // 'max-height': '435px',
-    //   'min-height': '435px',
-    //   'min-width': '369px',
-    //   'position': 'relative',
-    //   'cursor': 'pointer',
-    //   "background-color": "red"
-    
-      // 'transition-property': 'all',
-      // 'transition-duration': '0.5s',
-      // 'transition-timing-function': 'ease-out',
-    }
-  }
-}
-
