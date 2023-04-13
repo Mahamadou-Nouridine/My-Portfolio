@@ -1,15 +1,31 @@
-import {data, styles} from "./data.js";
-
+import { data, styles } from "./data.js";
 const sideMenu = document.querySelector(".side-menu");
 const hamburger = document.querySelector("#hamburger");
 const closeMenu = document.querySelector("#side-menu-close");
 const body = document.querySelector("body");
 const sideMenus = document.querySelectorAll(".side-menu-item");
 const projectCards = document.querySelector("#projects-cards");
-let size = window.innerWidth
+const popupContainer = document.querySelector(".popup-container");
+const popup = document.querySelector(".popup");
+const popupTitle = document.querySelector("#popup-title");
+const popupTags = document.querySelector(".popup-tags");
+const popupImage = document.querySelector("#popup-image");
+const popupDescription = document.querySelector("#popup-description");
+const popupSeeLive = document.querySelector("#popup-see-live");
+const popupSeeSource = document.querySelector("#popup-see-source");
+const popupCross = document.querySelector("#popup-cross");
+const project1Image = document.querySelector(".project1-image");
+const project1Title = document.querySelector(".project1-card-title");
+const project1Description = document.querySelector(
+  ".project1-card-description"
+);
+const project1Tags = document.querySelector(".project1-tags");
+const project1Card = document.querySelector(".project1-card");
+let size = window.innerWidth;
 window.onresize = () => {
-  size = window.innerWidth
-}
+  size = window.innerWidth;
+  popupContainer.style.setProperty("width", "100vw");
+};
 
 // side menu
 const openSideMenu = () => {
@@ -32,52 +48,123 @@ for (let i = 0; i < sideMenus.length; i += 1) {
 // side menu
 
 // project cards
+// project1 card
+const project1 = data[0];
+let tags1 = "";
+for (let tag of project1.technologies) {
+  tags1 += `<li class="project1-tag">${tag}</li>`;
+}
+project1Card.innerHTML = `
+ <div class="image-project1">
+                    <img class="project1-image" src=${project1.image} alt="multi-post-stories" />
+                </div>
+                <div class="project1-description">
+                    <h2 class="project1-card-title">${project1.name}</h2>
+                    <p class="project1-card-description">
+                        ${project1.description}
+                    </p>
+                    <ul class="project1-tags">
+                       ${tags1}
+                    </ul>
+
+                    <button class="project1-button">See Project</button>
+                </div>
+`;
+
 // showing the cards
 for (let i = 1; i < data.length; i += 1) {
   const card = document.createElement("div");
+  card.classList.add("card");
+  let tags = "";
+  for (let tag of data[i].technologies) {
+    tags += `<li class="card-tag">${tag}</li>`;
+  }
   card.innerHTML = `
-  <div class="card">
-  <div class="card-details">
+  <div class="card-details${i}">
   <h2 class="card-title">${data[i].name}</h2>
   <p class="card-description">
       ${data[i].description}
   </p>
   <ul class="card-tags">
-      <li class="card-tag">HTML</li>
-      <li class="card-tag">Booststrap</li>
-      <li class="card-tag">Ruby</li>
+      ${tags}
   </ul>
 </div>
-<button class="card-button">See project</button>
-</div>`;
-  card.style.setProperty('background',`linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(${data[i].image})`);
-  for (let [key, value] of Object.entries(styles.desktop.card)) {
-    card.style.setProperty(key, value)
-  }
-  
-  if(size >= 768) {
-    card.addEventListener('mouseover', () => {
-      card.style.backgroundImage = `url(${data[i].image})`;
-      card.style.transform = 'scale(1.08)';
-      card.style.backgroundColor = 'aqua';
-      const cardButtons = document.querySelectorAll('.card-button ')
-      const cardDetails = document.querySelectorAll('.card-details')
-      for(let cardDetail of cardDetails){
-        cardDetail.style.setProperty('display', 'none')
-      }
+<button class="card-button ${`card-button` + i}">See project</button>`;
+  card.style.setProperty(
+    "background",
+    `linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(${data[i].image})`
+  );
+  card.style.setProperty("background-size", `cover`);
 
-      for(let cardButton of cardButtons){
-        cardButton.style.setProperty('display', 'block')
-      }
-    });
-  
-    card.addEventListener('mouseout', () => {
+  card.addEventListener("mouseover", () => {
+    if (size >= 768) {
+      card.style.backgroundImage = `url(${data[i].image})`;
+      document.querySelector(`.card-details${i}`);
+      document
+        .querySelector(`.card-details${i}`)
+        .style.setProperty("display", "none");
+      card.style.setProperty("background-size", `cover`);
+      console.log(size);
+    }
+  });
+
+  card.addEventListener("mouseout", () => {
+    if (size >= 768) {
       card.style.background = `linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(${data[i].image})`;
-      card.style.transform = 'scale(1)';
-    });
-  
-  }
+      document
+        .querySelector(`.card-details${i}`)
+        .style.setProperty("display", "block");
+      card.style.setProperty("background-size", `cover`);
+    }
+  });
+
   projectCards.appendChild(card);
 }
-// project cards
 
+//see project button
+for (let i = 1; i < data.length; i += 1) {
+  document.querySelector(`.card-button${i}`).addEventListener("click", () => {
+    openPopup(data[i]);
+  });
+}
+
+// see project 1 button
+document.querySelector(".project1-button").addEventListener("click", () => {
+  openPopup(project1);
+});
+
+//open popup function
+const openPopup = (data) => {
+  changePopupData(data);
+  popupContainer.classList.add("popup-container-open");
+  setTimeout(() => {
+    popup.classList.add("popup-open");
+    body.style.overflow = "hidden";
+    popupContainer.style.backdropFilter = "blur(15px)";
+  }, 100);
+};
+
+const closePopup = () => {
+  popup.classList.remove("popup-open");
+  setTimeout(() => {
+    popupContainer.classList.remove("popup-container-open");
+    body.style.overflow = "unset";
+    popupContainer.style.backdropFilter = "unset";
+  }, 100);
+};
+
+popupCross.addEventListener("click", closePopup);
+const changePopupData = (data) => {
+  popupTitle.textContent = data.name;
+  popupDescription.textContent = data.description;
+  popupImage.src = data.image;
+  popupSeeLive.href = data.deployment;
+  popupSeeSource.href = data.source;
+  let tags = "";
+  for (let tag of data.technologies) {
+    tags += `<li class="project1-tag">${tag}</li>`;
+  }
+  popupTags.innerHTML = tags;
+};
+
+// project cards

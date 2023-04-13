@@ -84,16 +84,16 @@
     </section>
     <!-- popup  -->
     <div class="popup-container">
-        <div class="popup popup-open">
+        <div class="popup">
 
             <div class="popup-cross">
-                <i class="fa-sharp fa-solid fa-xmark"></i>
+                <i id="popup-cross" class="fa-sharp fa-solid fa-xmark"></i>
             </div>
 
             <div class="popup-title">
-                <h2>Multi Post Stories</h2>
+                <h2 id="popup-title">Multi Post Stories</h2>
 
-                <ul class="project1-tags">
+                <ul class="project1-tags popup-tags">
                     <li class="project1-tag">CSS</li>
                     <li class="project1-tag">HTML</li>
                     <li class="project1-tag">Bootstrap</li>
@@ -103,11 +103,11 @@
 
             <div class="popup-img-description">
                 <div class="popup-image">
-                    <img src="./images/iot.jpg" alt="">
+                    <img id="popup-image" src="./images/iot.jpg" alt="">
                 </div>
 
                 <div class="popup-description">
-                    <p>
+                    <p id="popup-description">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
@@ -120,7 +120,7 @@
                     <div class="popup-buttons">
                         <button class="see-live">
                             <span>
-                                See live
+                                <a id="popup-see-live" target="_blank" href="">See live</a> 
                             </span>
                             <span>
                                 <i class="bi bi-box-arrow-up-right"></i>
@@ -128,7 +128,7 @@
                         </button>
                         <button class="see-source">
                             <span>
-                                See source
+                                <a id="popup-see-source" target="_blank" href="">See source</a>
                             </span>
                             <span>
                                 <i class="fa-brands fa-github"></i>
@@ -155,26 +155,7 @@
                 </div>
             </div>
             <div class="project1-card">
-                <div class="image-project1">
-                    <img class="project1-image" src="./images/multi-post-stories.png" alt="multi-post-stories" />
-                </div>
-                <div class="project1-description">
-                    <h2 class="project1-card-title">Multi-Post Stories</h2>
-                    <p class="project1-card-description">
-                        A daily selection of privately personalized reads; no accounts or
-                        sign-ups required. has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a standard
-                        dummy text.
-                    </p>
-                    <ul class="project1-tags">
-                        <li class="project1-tag">CSS</li>
-                        <li class="project1-tag">HTML</li>
-                        <li class="project1-tag">Bootstrap</li>
-                        <li class="project1-tag">Ruby</li>
-                    </ul>
-
-                    <button class="project1-button">See Project</button>
-                </div>
+               
             </div>
             <div class="projects-card" id="projects-cards">
             </div>

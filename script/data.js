@@ -73,22 +73,23 @@ export const data = [
 export const styles = {
   desktop:{
     card: {
-      'margin-top': '24px',
-      'display': 'flex',
-      'flex-direction': 'column',
-     ' justify-content': 'flex-end',
-      /* background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/card-image.png"); */
-      'background-repeat': 'no-repeat',
-      'background-size': 'cover',
-      // 'max-height': '435px',
-      'min-height': '435px',
-      'min-width': '369px',
-      'position': 'relative',
-      'cursor': 'pointer',
+    //   'margin-top': '24px',
+    //   'display': 'flex',
+    //   'flex-direction': 'column',
+    //  ' justify-content': 'center',
+    //   'align-items': "center",
+    //   'background-repeat': 'no-repeat',
+    //   'background-size': 'cover',
+    //   // 'max-height': '435px',
+    //   'min-height': '435px',
+    //   'min-width': '369px',
+    //   'position': 'relative',
+    //   'cursor': 'pointer',
+    //   "background-color": "red"
     
-      'transition-property': 'all',
-      'transition-duration': '0.5s',
-      'transition-timing-function': 'ease-out',
+      // 'transition-property': 'all',
+      // 'transition-duration': '0.5s',
+      // 'transition-timing-function': 'ease-out',
     }
   }
 }

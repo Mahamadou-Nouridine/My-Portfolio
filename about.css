@@ -117,6 +117,21 @@ button:disabled {
   color: white;
 }
 
+.card {
+  margin-top: 24px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /* background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/card-image.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* max-height: 435px; */
+  min-height: 386px;
+  position: relative;
+  cursor: pointer;
+}
+
 .projects-card {
   padding: 0 0 120px 0;
   display: grid;
@@ -311,13 +326,14 @@ section {
   
   .card-button {
     display: none;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100%; */
   }
 
   .card:hover .card-details {
     display: none;
+    background-color: aqua;
   }
 
 
