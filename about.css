@@ -18,6 +18,7 @@ button {
   color: white;
   background: #ff6b00;
   border: none;
+  cursor: pointer;
 }
 
 button:hover {
@@ -117,6 +118,19 @@ button:disabled {
   color: white;
 }
 
+.card {
+  margin-top: 24px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 386px;
+  position: relative;
+  cursor: pointer;
+}
+
 .projects-card {
   padding: 0 0 120px 0;
   display: grid;
@@ -156,7 +170,7 @@ section {
 .card-tags {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   padding: 0 0 12px;
 }
 
@@ -166,22 +180,8 @@ section {
 }
 
 .card-tags {
-  max-width: 247px;
-  width: 100%;
-}
-
-.card {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/card-image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-height: 435px;
-  min-height: 386px;
-  position: relative;
-  cursor: pointer;
+  /* max-width: 247px; */
+  width: auto;
 }
 
 .project1-card {
@@ -199,6 +199,7 @@ section {
   line-height: 20px;
   letter-spacing: 0;
   text-align: left;
+  margin-right: 12px;
 }
 
 .project1-tag {
@@ -250,7 +251,6 @@ section {
 .card-button {
   height: 48px;
   width: 100%;
-  bottom: 0;
 }
 
 .project1-button {
@@ -324,26 +324,33 @@ section {
     justify-content: space-between;
   }
 
-  .card {
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-  }
-
-  .card:hover .card-details {
-    display: none;
+  .card:hover {
+    padding: 0;
+    margin: 0;
   }
 
   .card-button {
     display: none;
   }
 
-  .card:hover .card-button {
-    display: block;
+  .card:hover .card-details {
+    display: none;
+    background-color: aqua;
   }
 
-  .card:hover {
-    background-image: url("./images/card-image.png");
-    transform: scale(1.08);
+  .card:hover .card-button {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-right: -100px;
+  }
+
+  .skill-list {
+    align-items: start;
+  }
+
+  .skill-title {
+    justify-content: start;
   }
 }

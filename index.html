@@ -10,7 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="about.css" />
-    <script src="script.js" defer></script>
+    <script src="./script/script.js" type="module" defer></script>
     <title>My Portfolio</title>
 </head>
 
@@ -82,8 +82,71 @@
             </li>
         </ul>
     </section>
+    <!-- popup  -->
+    <div class="popup-container">
+        <div class="popup">
+
+            <div class="popup-cross">
+                <i id="popup-cross" class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="popup-title">
+                <h2 id="popup-title">Multi Post Stories</h2>
+
+                <ul class="project1-tags popup-tags">
+                    <li class="project1-tag">CSS</li>
+                    <li class="project1-tag">HTML</li>
+                    <li class="project1-tag">Bootstrap</li>
+                    <li class="project1-tag">Ruby</li>
+                </ul>
+            </div>
+
+            <div class="popup-img-description">
+                <div class="popup-image">
+                    <img id="popup-image" src="./images/iot.jpg" alt="">
+                </div>
+
+                <div class="popup-description">
+                    <p id="popup-description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                        the
+                        leap into electronic typesetting, remaining essent
+                    </p>
+
+                    <div class="popup-buttons">
+                        <button class="see-live">
+                            <span>
+                                <a id="popup-see-live" target="_blank" href="">See live</a> 
+                            </span>
+                            <span>
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </span>
+                        </button>
+                        <button class="see-source">
+                            <span>
+                                <a id="popup-see-source" target="_blank" href="">See source</a>
+                            </span>
+                            <span>
+                                <i class="fa-brands fa-github"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- popup  -->
+
+
 
     <section class="projects" id="projects">
+
+
         <div>
             <div class="projects-heading">
                 <h2 class="projects-title">My Recent Works</h2>
@@ -92,123 +155,9 @@
                 </div>
             </div>
             <div class="project1-card">
-                <div class="image-project1">
-                    <img class="project1-image" src="./images/multi-post-stories.png" alt="multi-post-stories" />
-                </div>
-                <div class="project1-description">
-                    <h2 class="project1-card-title">Multi-Post Stories</h2>
-                    <p class="project1-card-description">
-                        A daily selection of privately personalized reads; no accounts or
-                        sign-ups required. has been the industry's standard dummy text
-                        ever since the 1500s, when an unknown printer took a standard
-                        dummy text.
-                    </p>
-                    <ul class="project1-tags">
-                        <li class="project1-tag">CSS</li>
-                        <li class="project1-tag">HTML</li>
-                        <li class="project1-tag">Bootstrap</li>
-                        <li class="project1-tag">Ruby</li>
-                    </ul>
-
-                    <button class="project1-button">See Project</button>
-                </div>
+               
             </div>
-            <div class="projects-card">
-                <div class="card">
-                    <div class="card-details">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <p class="card-description">
-                            A daily selection of privately personalized reads; no accounts
-                            or sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="card-tags">
-                            <li class="card-tag">HTML</li>
-                            <li class="card-tag">Booststrap</li>
-                            <li class="card-tag">Ruby</li>
-                        </ul>
-                    </div>
-                    <button class="card-button">See project</button>
-                </div>
-
-                <div class="card">
-                    <div class="card-details">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <p class="card-description">
-                            A daily selection of privately personalized reads; no accounts
-                            or sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="card-tags">
-                            <li class="card-tag">HTML</li>
-                            <li class="card-tag">Booststrap</li>
-                            <li class="card-tag">Ruby</li>
-                        </ul>
-                    </div>
-                    <button class="card-button">See project</button>
-                </div>
-
-                <div class="card">
-                    <div class="card-details">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <p class="card-description">
-                            A daily selection of privately personalized reads; no accounts
-                            or sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="card-tags">
-                            <li class="card-tag">HTML</li>
-                            <li class="card-tag">Booststrap</li>
-                            <li class="card-tag">Ruby</li>
-                        </ul>
-                    </div>
-                    <button class="card-button">See project</button>
-                </div>
-
-                <div class="card">
-                    <div class="card-details">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <p class="card-description">
-                            A daily selection of privately personalized reads; no accounts
-                            or sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="card-tags">
-                            <li class="card-tag">HTML</li>
-                            <li class="card-tag">Booststrap</li>
-                            <li class="card-tag">Ruby</li>
-                        </ul>
-                    </div>
-                    <button class="card-button">See project</button>
-                </div>
-
-                <div class="card">
-                    <div class="card-details">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <p class="card-description">
-                            A daily selection of privately personalized reads; no accounts
-                            or sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="card-tags">
-                            <li class="card-tag">HTML</li>
-                            <li class="card-tag">Booststrap</li>
-                            <li class="card-tag">Ruby</li>
-                        </ul>
-                    </div>
-                    <button class="card-button">See project</button>
-                </div>
-
-                <div class="card">
-                    <div class="card-details">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <p class="card-description">
-                            A daily selection of privately personalized reads; no accounts
-                            or sign-ups required. Has been the industry's standard.
-                        </p>
-                        <ul class="card-tags">
-                            <li class="card-tag">HTML</li>
-                            <li class="card-tag">Booststrap</li>
-                            <li class="card-tag">Ruby</li>
-                        </ul>
-                    </div>
-                    <button class="card-button">See project</button>
-                </div>
+            <div class="projects-card" id="projects-cards">
             </div>
         </div>
     </section>
