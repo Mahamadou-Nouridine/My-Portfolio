@@ -1,4 +1,4 @@
-export const data = [
+export default [
   {
     name: 'Multi-Post Stories',
     description:

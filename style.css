@@ -275,7 +275,7 @@ footer {
   cursor: pointer;
 }
 
-/*popup*/
+/* popup */
 .popup {
   background-color: #fff;
   width: 95%;
@@ -284,7 +284,6 @@ footer {
   z-index: 101;
   padding: 25px;
   position: relative;
-
   transform: scale(0);
   transition: all ease-in-out 0.1s;
 }
@@ -292,7 +291,6 @@ footer {
 .popup-open {
   transform: scale(1);
 }
-
 
 .popup-cross {
   position: absolute;
@@ -310,11 +308,13 @@ footer {
   position: fixed;
   height: 100vh;
   width: 100vw;
+  backdrop-filter: blur(15px);
   display: none;
 }
 
 .popup-container-open {
   display: flex;
+  z-index: 1000;
 }
 
 .popup-image img {
@@ -353,13 +353,14 @@ footer {
   margin-bottom: 24px;
 }
 
-#popup-see-source, #popup-see-live {
+#popup-see-source,
+#popup-see-live {
   text-decoration: none;
   color: unset;
   cursor: pointer;
 }
 
-/*popup*/
+/* popup */
 
 @media only screen and (min-width: 768px) {
   .links {
@@ -453,4 +454,3 @@ footer {
 
   /* popup  */
 }
-

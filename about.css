@@ -18,6 +18,7 @@ button {
   color: white;
   background: #ff6b00;
   border: none;
+  cursor: pointer;
 }
 
 button:hover {
@@ -123,10 +124,8 @@ button:disabled {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  /* background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/card-image.png"); */
   background-repeat: no-repeat;
   background-size: cover;
-  /* max-height: 435px; */
   min-height: 386px;
   position: relative;
   cursor: pointer;
@@ -171,7 +170,7 @@ section {
 .card-tags {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   padding: 0 0 12px;
 }
 
@@ -181,8 +180,8 @@ section {
 }
 
 .card-tags {
-  max-width: 247px;
-  width: 100%;
+  /* max-width: 247px; */
+  width: auto;
 }
 
 .project1-card {
@@ -200,6 +199,7 @@ section {
   line-height: 20px;
   letter-spacing: 0;
   text-align: left;
+  margin-right: 12px;
 }
 
 .project1-tag {
@@ -323,12 +323,14 @@ section {
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
+  .card:hover {
+    padding: 0;
+    margin: 0;
+  }
+
   .card-button {
     display: none;
-    /* position: absolute;
-    bottom: 0;
-    width: 100%; */
   }
 
   .card:hover .card-details {
@@ -336,8 +338,19 @@ section {
     background-color: aqua;
   }
 
-
   .card:hover .card-button {
     display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-right: -100px;
+  }
+
+  .skill-list {
+    align-items: start;
+  }
+
+  .skill-title {
+    justify-content: start;
   }
 }

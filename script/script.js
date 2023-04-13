@@ -1,4 +1,4 @@
-import { data } from './data.js';
+import data from './data.js';
 
 const sideMenu = document.querySelector('.side-menu');
 const hamburger = document.querySelector('#hamburger');
@@ -16,12 +16,6 @@ const popupSeeLive = document.querySelector('#popup-see-live');
 const popupSeeSource = document.querySelector('#popup-see-source');
 const popupCross = document.querySelector('#popup-cross');
 const project1Card = document.querySelector('.project1-card');
-
-let size = window.innerWidth;
-window.onresize = () => {
-  size = window.innerWidth;
-  popupContainer.style.setProperty('width', '100vw');
-};
 
 // side menu
 const openSideMenu = () => {
@@ -46,9 +40,10 @@ for (let i = 0; i < sideMenus.length; i += 1) {
 // project cards
 // project1 card
 const project1 = data[0];
+const tagsData = project1.technologies;
 let tags1 = '';
-for (const tag of project1.technologies) {
-  tags1 += `<li class="project1-tag">${tag}</li>`;
+for (let i = 0; i < tagsData.length; i += 1) {
+  tags1 += `<li class="project1-tag">${tagsData[i]}</li>`;
 }
 project1Card.innerHTML = `
  <div class="image-project1">
@@ -72,8 +67,8 @@ for (let i = 1; i < data.length; i += 1) {
   const card = document.createElement('div');
   card.classList.add('card');
   let tags = '';
-  for (const tag of data[i].technologies) {
-    tags += `<li class="card-tag">${tag}</li>`;
+  for (let j = 0; j < data[i].technologies.length; j += 1) {
+    tags += `<li class="card-tag">${data[i].technologies[j]}</li>`;
   }
   card.innerHTML = `
   <div class="card-details${i}">
@@ -93,19 +88,18 @@ for (let i = 1; i < data.length; i += 1) {
   card.style.setProperty('background-size', 'cover');
 
   card.addEventListener('mouseover', () => {
-    if (size >= 768) {
+    if (window.innerWidth >= 768) {
       card.style.backgroundImage = `url(${data[i].image})`;
       document.querySelector(`.card-details${i}`);
       document
         .querySelector(`.card-details${i}`)
         .style.setProperty('display', 'none');
       card.style.setProperty('background-size', 'cover');
-      console.log(size);
     }
   });
 
   card.addEventListener('mouseout', () => {
-    if (size >= 768) {
+    if (window.innerWidth >= 768) {
       card.style.background = `linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(${data[i].image})`;
       document
         .querySelector(`.card-details${i}`)
@@ -116,6 +110,37 @@ for (let i = 1; i < data.length; i += 1) {
 
   projectCards.appendChild(card);
 }
+
+const changePopupData = (data) => {
+  popupTitle.textContent = data.name;
+  popupDescription.textContent = data.description;
+  popupImage.src = data.image;
+  popupSeeLive.href = data.deployment;
+  popupSeeSource.href = data.source;
+  let tags = '';
+  for (let i = 0; i < data.technologies.length; i += 1) {
+    tags += `<li class="project1-tag">${data.technologies[i]}</li>`;
+  }
+  popupTags.innerHTML = tags;
+};
+
+// open popup function
+const openPopup = (data) => {
+  changePopupData(data);
+  popupContainer.classList.add('popup-container-open');
+  setTimeout(() => {
+    popup.classList.add('popup-open');
+    body.style.overflow = 'hidden';
+  }, 100);
+};
+
+const closePopup = () => {
+  popup.classList.remove('popup-open');
+  setTimeout(() => {
+    popupContainer.classList.remove('popup-container-open');
+    body.style.overflow = 'unset';
+  }, 100);
+};
 
 // see project button
 for (let i = 1; i < data.length; i += 1) {
@@ -129,38 +154,6 @@ document.querySelector('.project1-button').addEventListener('click', () => {
   openPopup(project1);
 });
 
-// open popup function
-const openPopup = (data) => {
-  changePopupData(data);
-  popupContainer.classList.add('popup-container-open');
-  setTimeout(() => {
-    popup.classList.add('popup-open');
-    body.style.overflow = 'hidden';
-    popupContainer.style.backdropFilter = 'blur(15px)';
-  }, 100);
-};
-
-const closePopup = () => {
-  popup.classList.remove('popup-open');
-  setTimeout(() => {
-    popupContainer.classList.remove('popup-container-open');
-    body.style.overflow = 'unset';
-    popupContainer.style.backdropFilter = 'unset';
-  }, 100);
-};
-
 popupCross.addEventListener('click', closePopup);
-const changePopupData = (data) => {
-  popupTitle.textContent = data.name;
-  popupDescription.textContent = data.description;
-  popupImage.src = data.image;
-  popupSeeLive.href = data.deployment;
-  popupSeeSource.href = data.source;
-  let tags = '';
-  for (const tag of data.technologies) {
-    tags += `<li class="project1-tag">${tag}</li>`;
-  }
-  popupTags.innerHTML = tags;
-};
 
 // project cards
