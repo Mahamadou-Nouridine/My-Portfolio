@@ -16,6 +16,8 @@ const popupSeeLive = document.querySelector('#popup-see-live');
 const popupSeeSource = document.querySelector('#popup-see-source');
 const popupCross = document.querySelector('#popup-cross');
 const project1Card = document.querySelector('.project1-card');
+const emailInput = document.querySelector('#email-input');
+const validationError = document.querySelector('.validation-error');
 
 // side menu
 const openSideMenu = () => {
@@ -157,3 +159,24 @@ document.querySelector('.project1-button').addEventListener('click', () => {
 popupCross.addEventListener('click', closePopup);
 
 // project cards
+
+// card calidation
+// set error
+const setError = (message) => {
+  validationError.textContent = message;
+  validationError.style.setProperty('display', 'block');
+};
+
+// check if text is lowercase
+const isLowerCase = (input) => input === String(input).toLowerCase();
+
+document.querySelector('.form').addEventListener('submit', (e) => {
+  const input = emailInput.value;
+  const lowercase = isLowerCase(input);
+  if (!lowercase) {
+    e.preventDefault();
+    setError('The Email input should be lowercase');
+  } else {
+    validationError.style.diplay = 'none';
+  }
+});
