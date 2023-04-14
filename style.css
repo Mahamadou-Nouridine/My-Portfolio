@@ -362,6 +362,22 @@ footer {
 
 /* popup */
 
+/* form validation */
+.validation-error {
+  color: red;
+  font-style: italic;
+  font-size: medium;
+  font-weight: 800;
+  background-color: rgb(255, 0, 0, 0.1);
+  padding: 2px;
+  border-radius: 30px;
+  display: none;
+  max-width: 500px;
+  margin-bottom: - 20px;
+}
+
+/* form validation */
+
 @media only screen and (min-width: 768px) {
   .links {
     display: flex;
