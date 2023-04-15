@@ -8,6 +8,10 @@ body {
   position: relative;
 }
 
+.lable {
+  display: none;
+}
+
 section,
 footer {
   width: 100%;
